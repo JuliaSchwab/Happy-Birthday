@@ -1,7 +1,7 @@
 let slideIndex = 1;
 //showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous controlsxyz
 function plusSlides(n,Jahresauswahl) {
   showSlides(slideIndex += n,Jahresauswahl);
 }
