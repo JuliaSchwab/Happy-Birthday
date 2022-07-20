@@ -1,4 +1,3 @@
-let slideIndex = 1;
 let slideIncides = {
   ErstesJahr : 1,
   ZweitesJahr : 1,
