@@ -27,7 +27,7 @@ function plusSlides(n,Jahresauswahl) {
 
 function showSlides(n,Jahresauswahl) {
   let i;
-  let slides = document.querySelectorAll(`.${Jahresauswahl} > .slideshow-container > .mySlides`);
+  let slides = document.querySelectorAll(`.${Jahresauswahl} .slideshow-container > .mySlides`);
   if (n > slides.length) {slideIncides[Jahresauswahl] = 1}
   if (n < 1) {slideIncides[Jahresauswahl] = slides.length}
   for (i = 0; i < slides.length; i++) {
