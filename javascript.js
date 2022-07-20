@@ -7,6 +7,10 @@ let slideIncides = {
   SechstesJahr : 1,
   SiebtesJahr : 1,
 }
+
+BildundTextblockSichtbarMachen("ErstesJahr");
+
+
 showSlides(1,'ErstesJahr');
 showSlides(1,'ZweitesJahr');
 showSlides(1,'DrittesJahr');
@@ -23,7 +27,7 @@ function plusSlides(n,Jahresauswahl) {
 
 function showSlides(n,Jahresauswahl) {
   let i;
-  let slides = document.querySelectorAll(`.slideshow-container.${Jahresauswahl} > .mySlides`);
+  let slides = document.querySelectorAll(`.${Jahresauswahl} > .slideshow-container > .mySlides`);
   if (n > slides.length) {slideIncides[Jahresauswahl] = 1}
   if (n < 1) {slideIncides[Jahresauswahl] = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -32,3 +36,13 @@ function showSlides(n,Jahresauswahl) {
  
   slides[slideIncides[Jahresauswahl]-1].style.display = "block";
 }
+
+function BildundTextblockSichtbarMachen (Jahresauswahl) {
+   let BildundTextbloecke = document.querySelectorAll('div.row.BildundTextblock');
+  BildundTextbloecke.forEach(x=> x.style.display = "none");
+  
+    let BildundTextblock = document.querySelector(`div.row.${Jahresauswahl}`);
+  BildundTextblock.style.display = "block";
+  
+}
+  
