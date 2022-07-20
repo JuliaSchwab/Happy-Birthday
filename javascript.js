@@ -1,5 +1,11 @@
 let slideIndex = 1;
-//showSlides(slideIndex);
+showSlides(0,'ErstesJahr');
+showSlides(0,'ZweitesJahr');
+showSlides(0,'DrittesJahr');
+showSlides(0,'ViertesJahr');
+showSlides(0,'FuenftesJahr');
+showSlides(0,'SechstesJahr');
+showSlides(0,'SiebtesJahr');
 
 // Next/previous controlsxyz
 function plusSlides(n,Jahresauswahl) {
