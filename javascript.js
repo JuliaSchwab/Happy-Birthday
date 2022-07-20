@@ -19,7 +19,7 @@ showSlides(1,'SiebtesJahr');
 // Next/previous controlsxyz
 function plusSlides(n,Jahresauswahl) {
   slideIncides[Jahresauswahl] = slideIncides[Jahresauswahl] + n;
-  showSlides(slideIndex += n,Jahresauswahl);
+  showSlides(slideIncides[Jahresauswahl],Jahresauswahl);
 }
 
 function showSlides(n,Jahresauswahl) {
